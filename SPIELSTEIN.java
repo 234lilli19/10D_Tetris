@@ -26,6 +26,12 @@
         spielstein.PositionSetzen (0, -9);    
     }
     
+    int YPositionGeben()
+    {
+        return y;    
+    }
+    
+    
     void RichtungSetzen()
     {
         
