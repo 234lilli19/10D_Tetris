@@ -30,10 +30,6 @@ import java. awt. event. *;
         timer.start ();
     }
     
-    void RichtungSetzen (char richtungNeu)
-    {
-        
-    }
     void TasteGedrueckt (char welche)
     {
         switch (welche)
