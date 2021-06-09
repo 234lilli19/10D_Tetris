@@ -39,14 +39,14 @@ class RANDSYMBOL
                 int [] xKoord = {0, getWidth (), getWidth (), 0, 0, groesse, groesse, getWidth () - groesse, getWidth () - groesse, groesse, 0};
                 int [] yKoord = {0, 0, getHeight (), getHeight (), 0, groesse, getHeight () - groesse, getHeight () - groesse, groesse, groesse, 0};
                 g. fillPolygon(xKoord, yKoord, xKoord.length);
-        		if (wertGesetzt)
+                if (wertGesetzt)
                 {
                     Font font = new Font ("Helvetica", Font.BOLD, 14);
                     g. setFont (font);
                     g. setColor (Color. blue);
                     g. drawString ("Punkte: " + punkte, 4, 3 * groesse / 4);
                 }
-        		if (endemeldungGesetzt)
+                if (endemeldungGesetzt)
                 {
                     Font font = new Font ("Helvetica", Font.BOLD, 24);
                     g. setFont (font);
@@ -140,7 +140,7 @@ class RANDSYMBOL
      */
     void PunkteSetzen (int punkte)
     {
-    	this.punkte = punkte;
+        this.punkte = punkte;
         wertGesetzt = true;
         anzeige. invalidate();
     }
@@ -151,7 +151,7 @@ class RANDSYMBOL
      */
     void EndemeldungSetzen (String meldung)
     {
-    	endeMeldung = meldung;
+        endeMeldung = meldung;
         endemeldungGesetzt = true;
         anzeige. invalidate();
         anzeige. repaint();

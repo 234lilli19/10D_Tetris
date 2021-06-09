@@ -7,13 +7,29 @@
  */
  class SPIELSTEIN
 {
+    BLUE_RICKY blue_ricky;
+    CLEVELAND_Z cleveland_z;
+    TEEWEE teewee;
+    HERO hero;
+    ORANGE_RICKY orange_ricky;
+    RHODE_ISLAND_Z rhode_island_z;
+    SMASHBOY smashboy;
+    SPIELSTEIN spielstein;
     
-    /**
-     * Konstruktor für Objekte der Klasse SPIELSTEIN
-     */
     SPIELSTEIN()
+    {
+        spielstein = new SPIELSTEIN();   
+    }
+    
+    void PositionSetzen (int x, int y)
+    {
+        spielstein.PositionSetzen (0, -9);    
+    }
+    
+    void RichtungSetzen()
     {
         
     }
-
 }
+
+
