@@ -19,7 +19,7 @@
     SPIELSTEIN()
     {
         spielstein = new SPIELSTEIN(); 
-        blue_ricky = new BLUE_RICKY ();
+        
     }
     
     void PositionSetzen (int x, int y)
