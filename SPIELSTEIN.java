@@ -18,7 +18,8 @@
     
     SPIELSTEIN()
     {
-        spielstein = new SPIELSTEIN();   
+        spielstein = new SPIELSTEIN(); 
+        blue_ricky = new BLUE_RICKY ();
     }
     
     void PositionSetzen (int x, int y)
@@ -28,9 +29,13 @@
     
     int YPositionGeben()
     {
-        return y;    
+        return spielstein.YPositionGeben();   
     }
     
+    int XPositionGeben()
+    {
+        return spielstein.XPositionGeben();
+    }
     
     void RichtungSetzen()
     {
