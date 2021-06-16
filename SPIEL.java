@@ -6,7 +6,7 @@ import java. awt. event. *;
  * @LadyBotox,LadyAnna-Lena 
  * @version (eine Versionsnummer oder ein Datum)
  */
- class SPIEL
+ class SPIEL extends SIMULATION
 {
     RANDSYMBOL spielfeldrand;
     SPIELSTEIN spielstein;
@@ -20,14 +20,9 @@ import java. awt. event. *;
        punkte = 0;
     }
     
-    void Anhalten()
+    void TaktImpulsAusfuehren ()
     {
-        timer.stop ();
-    }
-    
-    void Starten()
-    {
-        timer.start ();
+        
     }
     
     void TasteGedrueckt (char welche)
