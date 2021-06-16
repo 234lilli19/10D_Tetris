@@ -25,9 +25,8 @@ class TEEWEE extends SPIELSTEIN
 
      TEEWEE()
     {
-       
-        
-    
+        x = 0;
+        y = -9;
         fenster = SPIELFELD. FensterGeben ();
         anzeige = new JComponent () {
             // Stellt den 1. Stein von TEEWEE auf dem Fenster dar.
@@ -43,7 +42,7 @@ class TEEWEE extends SPIELSTEIN
         };
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        spielstein.PositionSetzen (x, y);
+        PositionSetzen (x, y);
         
         
         anzeige = new JComponent () {
@@ -60,7 +59,7 @@ class TEEWEE extends SPIELSTEIN
         };
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        spielstein.PositionSetzen (x + 1, y);
+        PositionSetzen (x + 1, y);
         
         
         anzeige = new JComponent () {
@@ -78,7 +77,7 @@ class TEEWEE extends SPIELSTEIN
         
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        spielstein.PositionSetzen (x + 2, y + 1);
+        PositionSetzen (x , y + 1);
         
         
         anzeige = new JComponent () {
@@ -95,7 +94,7 @@ class TEEWEE extends SPIELSTEIN
         };
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        spielstein.PositionSetzen (x + 1, y + 2);
+        PositionSetzen (x + 1, y - 1);
 
     }
 

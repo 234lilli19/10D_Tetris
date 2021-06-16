@@ -25,6 +25,8 @@ class BLUE_RICKY extends SPIELSTEIN
     BLUE_RICKY()
     {
         fenster = SPIELFELD. FensterGeben ();
+        x = 0;
+        y = -9;
         anzeige = new JComponent () {
             // Stellt den 1. Stein von Blue Ricky auf dem Fenster dar.
             public void paintComponent (Graphics a)
