@@ -39,7 +39,7 @@ class BLUE_RICKY extends SPIELSTEIN
         };
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (0, 1);
+        PositionSetzen (x, y);
         
         
         anzeige = new JComponent () {
@@ -56,7 +56,7 @@ class BLUE_RICKY extends SPIELSTEIN
         };
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (1, 1);
+        PositionSetzen (x + 1, y);
         
         
         anzeige = new JComponent () {
@@ -74,7 +74,7 @@ class BLUE_RICKY extends SPIELSTEIN
         
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (2, 1);
+        PositionSetzen (x + 1, y);
         
         
         anzeige = new JComponent () {
@@ -91,7 +91,7 @@ class BLUE_RICKY extends SPIELSTEIN
         };
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (0, 0);
+        PositionSetzen (x, y - 1);
 
     }
 
