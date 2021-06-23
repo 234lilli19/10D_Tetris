@@ -26,7 +26,7 @@ class TEEWEE extends SPIELSTEIN
      TEEWEE()
     {
         x = 0;
-        y = -9;
+        y = -7;
         fenster = SPIELFELD. FensterGeben ();
         anzeige = new JComponent () {
             // Stellt den 1. Stein von TEEWEE auf dem Fenster dar.
