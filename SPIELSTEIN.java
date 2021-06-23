@@ -16,9 +16,10 @@
     SMASHBOY smashboy;
     SPIELSTEIN spielstein;
     
-    SPIELSTEIN()
+    SPIELSTEIN(int x, int y, char richtung)
     {
-
+        spielstein. AusrichtungSetzen (richtung);
+        spielstein. PositionSetzen (x, y);
         
     }
     
@@ -27,8 +28,6 @@
         spielstein.PositionSetzen (0, -9);    
     }
     
-    
-    
     void RichtungSetzen(char richtungNeu)
     {
         spielstein.Ausrichtung (richtungNeu);
@@ -36,7 +35,7 @@
     
     void Drehen()
     {
-        
+        Drehen();
     }
     
     void Bewegen(boolean fallen)
@@ -59,6 +58,21 @@
                 Drehen();
             break;
         }
+    }
+    
+    void XPositionGeben()
+    {
+        return spielstein.XPositionGeben();
+    }
+    
+    void YPositionGeben()
+    {
+        return spielstein.YPositionGeben();
+    }
+    
+    boolean BeruehrungOben()
+    {
+        
     }
 }
 
