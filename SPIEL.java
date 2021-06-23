@@ -22,7 +22,24 @@ import java. awt. event. *;
     
     void TaktImpulsAusfuehren ()
     {
-        
+        if ((spielstein. XPositionGeben() <= spielfeldrand. XMaxGeben())
+        && (spielstein. XPositionGeben() >= spielstein. XMinGeben())
+        && (spielstein.YPositionGeben() <= spielfeldrand. YMaxGeben())
+        && (spielstein.YPositionGeben() >= spielfeldrand. YMinGeben())
+        && !spielstein.BeruehrungOben())
+        {
+            spielstein. Bewegen();
+        }
+        else
+        {
+            Anhalten();
+            if(spielstein.BeruehrungOben())
+            {
+                spielfeldrand.EndemeldungSetzen("Game Over - Platz verbraucht");
+            }
+            
+        }
+    
     }
     
     void TasteGedrueckt (char welche)
@@ -38,13 +55,17 @@ import java. awt. event. *;
             Anhalten ();
             break;
           
+          case KeyEvent. VK_DOWN:
+              spielstein. RichtungSetzen ('S');
+              break;
           case KeyEvent. VK_LEFT:
             spielstein. RichtungSetzen ('W');
             break;
           case KeyEvent. VK_RIGHT:
             spielstein. RichtungSetzen ('O');
             break;
-          
+          case KeyEvent. VK_UP:
+              spielstein. Drehen ('R');
           default:
             //System. out. println ("Taste: " + (0 + (int) welche));
         }

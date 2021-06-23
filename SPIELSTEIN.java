@@ -29,9 +29,36 @@
     
     
     
-    void RichtungSetzen()
+    void RichtungSetzen(char richtungNeu)
+    {
+        spielstein.Ausrichtung (richtungNeu);
+    }
+    
+    void Drehen()
     {
         
+    }
+    
+    void Bewegen(boolean fallen)
+    {
+        int x; xalt;
+        int y; yalt;
+        x = spielstein.XPositionGeben();
+        y = spielstein.YPositionGeben();
+        xalt = x;
+        yalt = y;
+        switch (spielstein.AusrichtungGeben())
+        {
+            case 'O':
+                x += 1;
+            case 'W':
+                x -= 1;
+            case 'S':
+                y -= 1;
+            case 'R':
+                Drehen();
+            break;
+        }
     }
 }
 
