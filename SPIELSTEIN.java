@@ -16,16 +16,11 @@
     SMASHBOY smashboy;
     SPIELSTEIN spielstein;
     
-    SPIELSTEIN(int x, int y, char richtung)
+    SPIELSTEIN(int x, int y)
     {
-        spielstein. AusrichtungSetzen (richtung);
+        
         spielstein. PositionSetzen (x, y);
         
-    }
-    
-    void PositionSetzen (int x, int y)
-    {
-        spielstein.PositionSetzen (0, -9);    
     }
     
     void RichtungSetzen(char richtungNeu)
