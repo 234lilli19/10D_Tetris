@@ -16,6 +16,8 @@ import javax. swing. *;
     
     ORANGE_RICKY()
     {
+        x = 0;
+        y = -7;
         fenster = SPIELFELD. FensterGeben ();
         anzeige = new JComponent () {
             // Stellt den 1. Stein von Orange Ricky auf dem Fenster dar.
@@ -31,7 +33,7 @@ import javax. swing. *;
         };
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (0, 1);
+        PositionSetzen (x, y);
         
         
         anzeige = new JComponent () {
@@ -48,7 +50,7 @@ import javax. swing. *;
         };
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (1, 1);
+        PositionSetzen (x + 1, y);
         
         
         anzeige = new JComponent () {
@@ -66,7 +68,7 @@ import javax. swing. *;
         
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (2, 1);
+        PositionSetzen (x + 1, y);
         
         
         anzeige = new JComponent () {
@@ -83,7 +85,7 @@ import javax. swing. *;
         };
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (2, 0);
+        PositionSetzen (x , y - 1);
 
     }
 

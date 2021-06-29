@@ -4,7 +4,7 @@ import javax. swing. *;
 /**
  * Beschreiben Sie hier die Klasse SPIELFELD.
  * 
- * @author Jonas & Anna-Lena
+ * 
  * @version 12.05
  */
  class SPIELFELD
