@@ -15,10 +15,13 @@
     RHODE_ISLAND_Z rhode_island_z;
     SMASHBOY smashboy;
     SPIELSTEIN spielstein;
+     int y;
+     int x;
+     char ausrichtung;
     
     SPIELSTEIN(int x, int y)
     {
-        
+        spielstein.AusrichtungSetzen (richtung);
         spielstein. PositionSetzen (x, y);
         
     }
@@ -45,10 +48,13 @@
         {
             case 'O':
                 x += 1;
+                break;
             case 'W':
                 x -= 1;
+                break;
             case 'S':
-                y -= 1;
+                y += 1;
+                break;
             case 'R':
                 Drehen();
             break;
@@ -67,8 +73,17 @@
     
     boolean BeruehrungOben()
     {
-        
-    }
+        for (SPIELSTEIN r: spielstein)
+        {
+            if ((spielstein.XPositionGeben() == r.XPositionGeben()) &&
+            (spielstein.YPositionGeben() == r.YPositionGeben()))
+            {
+                return true;
+            }
+        }
+        return false;
+        }
 }
+
 
 
