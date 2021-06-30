@@ -27,7 +27,8 @@ class BLUE_RICKY extends SPIELSTEIN
         fenster = SPIELFELD. FensterGeben ();
         x = 0;
         y = -8;
-        anzeige = new JComponent () {
+        anzeige = new JComponent () 
+        {
             // Stellt den 1. Stein von Blue Ricky auf dem Fenster dar.
             public void paintComponent (Graphics a)
             {
@@ -105,7 +106,38 @@ class BLUE_RICKY extends SPIELSTEIN
        anzeige. setLocation (SPIELFELD. FensterBreiteGeben () / 2 + x * groesse, SPIELFELD. FensterHoeheGeben () / 2 + y * groesse);
     }
 
-   
+    void Drehen()
+    {
+        switch (drehphase)
+        {
+            case 1:
+                PositionSetzen (x, y);
+                PositionSetzen (x + 1, y);
+                PositionSetzen (x + 1, y);
+                PositionSetzen (x, y + 1);
+                break;
+            case 2:
+                PositionSetzen (x + 1, y - 1);
+                PositionSetzen (x, y + 1);
+                PositionSetzen (x, y + 1);
+                PositionSetzen (x - 1, y);
+                break;
+            case 3:
+                PositionSetzen (x + 1, y);
+                PositionSetzen (x - 1, y);
+                PositionSetzen (x - 1, y);
+                PositionSetzen (x, y + 1);
+                break;
+            case 4:
+                PositionSetzen (x, y + 1);
+                PositionSetzen (x, y - 1);
+                PositionSetzen (x, y - 1);
+                PositionSetzen (x + 1, y);
+                break;
+                default:
+                    System.out.printIn("Drehen" + drehphase);
+        }
+    }
 }
 
 
