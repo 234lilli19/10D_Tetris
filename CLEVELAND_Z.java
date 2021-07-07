@@ -34,7 +34,7 @@ class CLEVELAND_Z extends SPIELSTEIN
         };
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (x, y);
+        PositionSetzen (x - 1, y);
         
         
         anzeige = new JComponent () {

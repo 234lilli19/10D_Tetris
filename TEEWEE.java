@@ -42,7 +42,7 @@ class TEEWEE extends SPIELSTEIN
         };
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (x, y);
+        PositionSetzen (x - 1, y);
         
         
         anzeige = new JComponent () {
@@ -77,7 +77,7 @@ class TEEWEE extends SPIELSTEIN
         
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (x , y + 1);
+        PositionSetzen (x + 1 , y);
         
         
         anzeige = new JComponent () {
@@ -94,7 +94,7 @@ class TEEWEE extends SPIELSTEIN
         };
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (x + 1, y - 1);
+        PositionSetzen (x - 1, y - 1);
 
     }
 

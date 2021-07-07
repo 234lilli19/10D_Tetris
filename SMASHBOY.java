@@ -69,7 +69,7 @@ class SMASHBOY extends SPIELSTEIN
         
         anzeige. setSize (groesse, groesse);
         fenster. add (anzeige, 0);
-        PositionSetzen (x , y - 1);
+        PositionSetzen (x , y + 1);
         
         
         anzeige = new JComponent () {
