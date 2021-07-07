@@ -31,10 +31,6 @@
         spielstein.Ausrichtung (richtungNeu);
     }
     
-    void Drehen()
-    {
-        Drehen();
-    }
     
     void Bewegen(boolean fallen)
     {
