@@ -100,7 +100,7 @@ class CLEVELAND_Z extends SPIELSTEIN
     
     void Drehen()
     {
-        switch (drehphase)
+        switch (ausrichtung)
         {
             case 1:
                 PositionSetzen (x -1, y);

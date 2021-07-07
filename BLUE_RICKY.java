@@ -108,7 +108,7 @@ class BLUE_RICKY extends SPIELSTEIN
 
     void Drehen()
     {
-        switch (drehphase)
+        switch (ausrichtung)
         {
             case 1:
                 PositionSetzen (x, y);

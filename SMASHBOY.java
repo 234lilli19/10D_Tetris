@@ -99,7 +99,7 @@ class SMASHBOY extends SPIELSTEIN
     }
     void Drehen()
     {
-        switch (drehphase)
+        switch (ausrichtung)
         {
             case 1:
                 PositionSetzen (x, y);
@@ -126,10 +126,12 @@ class SMASHBOY extends SPIELSTEIN
                 PositionSetzen (x, y + 1);
                 break;
                 default:
-                    System.out.printIn("Drehen" + drehphase);
+                    System.out.printIn("Drehen" + ausrichtung);
 
    
         }
+       
     }
+    
 }
 

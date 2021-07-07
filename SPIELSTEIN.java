@@ -21,26 +21,27 @@
     
     SPIELSTEIN(int x, int y)
     {
-        spielstein.AusrichtungSetzen (richtung);
-        spielstein. PositionSetzen (x, y);
+        AusrichtungSetzen (richtung);
+        PositionSetzen (x, y);
         
     }
     
+    void Ausrichtung(char ausrichtungNeu)
+    {
+        
+    }
     void RichtungSetzen(char richtungNeu)
     {
-        spielstein.Ausrichtung (richtungNeu);
+        Ausrichtung (richtungNeu);
+    }
+    void Drehen()
+    {
+        
     }
     
-    
-    void Bewegen(boolean fallen)
+    void Bewegen(int fallen)
     {
-        int x; xalt;
-        int y; yalt;
-        x = spielstein.XPositionGeben();
-        y = spielstein.YPositionGeben();
-        xalt = x;
-        yalt = y;
-        switch (spielstein.AusrichtungGeben())
+        switch (blue_ricky.PositionSetzen())
         {
             case 'O':
                 x += 1;
@@ -55,16 +56,13 @@
                 Drehen();
             break;
         }
+    
     }
     
-    void XPositionGeben()
+    void PositionSetzen(int x, int y)
     {
-        return spielstein.XPositionGeben();
-    }
-    
-    void YPositionGeben()
-    {
-        return spielstein.YPositionGeben();
+        x=0;
+        y=-8;
     }
     
     boolean BeruehrungOben()

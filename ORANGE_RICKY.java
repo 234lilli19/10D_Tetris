@@ -99,7 +99,7 @@ import javax. swing. *;
 
     void Drehen()
     {
-        switch (drehphase)
+        switch (ausrichtung)
         {
             case 1:
                 PositionSetzen (x - 2, y);
@@ -126,7 +126,7 @@ import javax. swing. *;
                 PositionSetzen (x - 1, y);
                 break;
                 default:
-                    System.out.printIn("Drehen" + drehphase);
+                    System.out.printIn("Drehen" + ausrichtung);
 
    
         }

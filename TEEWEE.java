@@ -107,7 +107,7 @@ class TEEWEE extends SPIELSTEIN
     }
     void Drehen()
     {
-        switch (drehphase)
+        switch (ausrichtung)
         {
             case 1:
                 PositionSetzen (x - 1, y);
@@ -134,7 +134,7 @@ class TEEWEE extends SPIELSTEIN
                 PositionSetzen (x - 1, y - 1);
                 break;
                 default:
-                    System.out.printIn("Drehen" + drehphase);
+                    System.out.printIn("Drehen" + ausrichtung);
 
    
         }

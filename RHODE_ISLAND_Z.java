@@ -102,7 +102,7 @@ class RHODE_ISLAND_Z extends SPIELSTEIN
 
     void Drehen()
     {
-        switch (drehphase)
+        switch (ausrichtung)
         {
             case 1:
                 PositionSetzen (x, y + 1);
@@ -129,7 +129,7 @@ class RHODE_ISLAND_Z extends SPIELSTEIN
                 PositionSetzen (x, y + 1);
                 break;
                 default:
-                    System.out.printIn("Drehen" + drehphase);
+                    System.out.printIn("Drehen" + ausrichtung);
 
    
         }
