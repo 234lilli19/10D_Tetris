@@ -97,6 +97,7 @@ class SMASHBOY extends SPIELSTEIN
        this. y = y;
        anzeige. setLocation (SPIELFELD. FensterBreiteGeben () / 2 + x * groesse, SPIELFELD. FensterHoeheGeben () / 2 + y * groesse);
     }
+    
     void Drehen()
     {
         switch (ausrichtung)
